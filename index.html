@@ -65,7 +65,14 @@
                         <div class="outer">
                             <div class="inner">           
                                 <ul data-breakpoint="1025" class="flexnav">                          
-                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="videos.html"><span data-hover="Vídeos">Vídeos</span></a></li>                        
+                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="videos.html" onclick="handleRedirect2(event)"><span data-hover="Vídeos">Vídeos</span></a></li>                        
+                                    
+                                    <script>
+                                        function handleRedirect2(event) {
+                                          event.preventDefault(); // Evita o comportamento padrão do link
+                                          window.location.href = 'videos.html'; // Redireciona o usuário
+                                        }
+                                      </script>                      
                                     
                                     <li class="link menu-timeline">
                                         <a class="ajax-link" data-type="page-transition" href="galeria.html" onclick="handleRedirect(event)">
