@@ -16,6 +16,10 @@
   --darker-blue: #161616;
 }
 
+body {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
