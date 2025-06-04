@@ -1557,7 +1557,7 @@ Function Showcase
 			$('.footer-button').on('mousedown touchstart', function(event) {
 
 				event.preventDefault();
-				$('.button-border span[data-hover]').each(function(){$(this).attr('data-hover', "Hold On");});
+				$('.button-border span[data-hover]').each(function(){$(this).attr('data-hover', "Pressione");});
 				$('.is-selected').addClass('down-hold');
 				$('.caption-border').append('<span class="btn-hold-progress-bar"></span>');
 				$('.section-image').animate({
